@@ -1,0 +1,365 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.background{
+    background: url(../assets/bg.png);
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    position: fixed; 
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.content{
+    overflow: scroll;
+    align-content: flex-start;
+    margin-inline: 75px;
+    margin-block-start: 50px;
+    height: 660px;
+    background-color: #542823ec;
+}
+
+.navbar{
+    background-color: #470A03;
+    height: 54px;
+    top: 0;
+    display: flex;
+    padding: 12px;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.nav-img{
+    justify-content: left;
+    display: flex;
+}
+
+.nav-img img{
+    width: 90px;
+    height: auto;
+    margin-block: 0;
+    margin-left: 10px;
+    z-index: 3;
+}
+
+#web-name{
+    align-content: center;
+    font-size: 22px;
+    margin-left: 10px;
+    padding-block: 0;
+    margin-block: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.navbar ul li:last-child a{
+    margin-right: 15px;
+    border-right: none !important;
+}
+
+.navbar ul:hover li a{
+    opacity: 50%;
+}
+
+.navbar ul li a:hover {
+    opacity: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 581px;
+}
+
+.content-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    width: auto;
+    padding-inline: 20px;
+    padding-block: 30px;
+    background-color: #470a03ac;
+    border-radius: 10%;
+    border: 5px solid #470A03;
+}
+
+.title{
+    margin: 8px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form label{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input, select, option{
+    font-size: 12.5px;
+    margin-bottom: 5px;
+    margin-inline: 45px ;
+    padding-block: 2px;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    background-color: #F0F0F0;
+    color: #220000;
+}
+
+button{
+    background-color: #a94338b5;
+    color: #e7e7e7;
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5vh;
+    text-decoration: none;
+}
+
+.form ::placeholder{
+    color: #220000;
+    opacity: 60%;
+}
+
+.btn{
+    font-size: 12.5px;
+}
+
+.checkbox span{
+    color: #FFB9B9;
+}
+
+#gender {
+    color: #220000;
+}
+
+.content-div{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    padding: 0;
+    margin: 15px 20px;
+    margin-bottom: 0;
+}
+
+.checkbox input{
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.checkbox label{
+    font-size: 10px;
+    margin: 0;
+}
+
+.content-1-1, .content-1-2{
+    width: 400px;
+}
+
+.content-1-1{
+    border-right: 4px solid;
+}
+
+.check-acc p, span{
+    font-size: 10px;
+}
+
+.check-acc{
+    margin-top: 20px;
+}
+
+
+footer{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: baseline;
+    gap: 40px;
+    background-color: #470A03;
+    padding: 7px 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	align-items: baseline;
+    font-size: 14px;
+}
+
+.socmed-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.socmed{
+    font-size: 14px;
+}
+
+.social-media img{
+    height: 20px;
+    width: 20px;
+}
+
+.made-by{
+    text-align: right;
+    padding: 20px;
+    font-size: 14px; 
+}
+
+footer .detail{
+    font-size: 14px;
+}
+
+footer .detail a{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:768px) {
+    *{
+        font-size:15px;
+    }
+
+    .wrapper{
+        height: 534px;
+    }
+
+    .content{
+        margin: 30px;  
+        height: 680px;  
+    }
+
+    .content-1{
+        width: 500px;
+        margin-block: 50px;
+    }
+
+    .content-div{
+        justify-content: center;
+        width: 450px;
+    }
+
+    .content-1-1, .content-1-2{
+        width: 240px;
+    }
+
+    .form{
+        flex-direction: column;
+        justify-content: flex-start;
+	    align-items: center;
+    }
+
+    .title{
+        font-size: 14px;
+    }
+    .checkbox{
+        width: 250px;
+    }
+
+    label,
+    input{
+        font-size: 11px;
+    }
+
+    input,
+    select{
+        width: 200px;
+    }
+
+    .checkbox label, span{
+        font-size: 9px;
+    }
+
+    .checkbox input{
+        flex: 1;
+    }
+
+    .checkbox label{
+        flex: 20;
+    }
+
+    footer{
+        gap: 5px;
+    }
+
+    .made-by{
+        font-size: 8px;
+        padding: 8px;
+    }
+
+    .socmed{
+        font-size: 14px;
+    }
+    
+    .social-media img{
+        height: 10px;
+        width: 10px;
+    }
+    
+    .contact{
+        font-size: 8px;
+    }
+
+    .socmed{
+        font-size: 8px;
+    }
+    
+    footer .detail{
+        font-size: 8px;
+    }
+    
+    footer .detail a{
+        font-size: 8px;
+    }
+
+}

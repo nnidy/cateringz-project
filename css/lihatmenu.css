@@ -1,0 +1,433 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.background{
+    background: url(../assets/bg.png);
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    position: fixed; 
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.content{
+    overflow: scroll;
+    align-content: flex-start;
+    margin-inline: 75px;
+    margin-block-start: 50px;
+    height: 660px;
+    background-color: #542823ec;
+}
+
+.navbar{
+    background-color: #470A03;
+    height: 54px;
+    top: 0;
+    display: flex;
+    padding: 12px;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.nav-img{
+    justify-content: left;
+    display: flex;
+}
+
+.nav-img img{
+    width: 90px;
+    height: auto;
+    margin-block: 0;
+    margin-left: 10px;
+    z-index: 3;
+}
+
+#web-name{
+    align-content: center;
+    font-size: 22px;
+    margin-left: 10px;
+    padding-block: 0;
+    margin-block: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.navbar ul li:last-child a{
+    margin-right: 15px;
+    border-right: none !important;
+}
+
+.navbar ul:hover li a{
+    opacity: 50%;
+}
+
+.navbar ul li a:hover {
+    opacity: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 582px;
+    overflow: scroll;
+    margin-top: 20px;
+}
+
+.content-wrap{
+    margin-bottom: 50px;
+}
+
+.content-wrap h4{
+    margin-bottom: 3px;
+}
+
+#title{
+    font-size: 20px;
+    margin-block: 10px 0;
+}
+
+.content-1{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+    margin: 0 100px;
+    padding: 30px 30px;
+    padding-bottom: 15px;
+    background-color: #470a038a;
+    border: transparent;
+    border-radius: 2rem;
+    gap: 20px;
+}
+
+.content-see{
+    display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+    gap: 20px;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    background-color: #a9433853;
+    width: 300px;
+    height: auto;
+    padding-block: 5px;
+    overflow: hidden;
+}
+
+.menu img{
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.thumb-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.thumb-img img{
+    height: 50px;
+    width: 50px;
+}
+
+.Harga, .details{
+    display: none;
+}
+
+.menu:hover .Harga{
+    display: contents;
+}
+
+.menu:hover .details{
+    display: contents;
+}
+
+.menu-details h5{
+    margin: 1cap;
+    font-size: 20px;
+}
+
+.details{
+    font-size: 12px;
+    margin: 8px;
+}
+
+.content-hide1{
+    display: none;
+}
+
+.content-hide2{
+    display: none;
+}
+
+.content-hide3{
+    display: none;
+}
+
+.content-hide4{
+    display: none;
+}
+
+.content-hide-1{
+    display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+    gap: 20px;
+}
+
+label{
+    display: inline-block;
+    color: whitesmoke;
+    padding: 10px 25px;
+    border-radius: 1vh;
+    margin-top: 10px;
+    font-size: 10px;
+    background-color: #470A03;
+}
+
+#ch1{
+    display: none;
+}
+
+#ch1:checked ~ .content-hide1{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#ch1:checked ~ .click-to-see1{
+    display: none;
+}
+
+
+#ch2{
+    display: none;
+}
+
+#ch2:checked ~ .content-hide2{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#ch2:checked ~ .click-to-see2{
+    display: none;
+}
+
+
+#ch3{
+    display: none;
+}
+
+#ch3:checked ~ .content-hide3{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#ch3:checked ~ .click-to-see3{
+    display: none;
+}
+
+
+#ch4{
+    display: none;
+}
+
+#ch4:checked ~ .content-hide4{
+    display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#ch4:checked ~ .click-to-see4{
+    display: none;
+}
+
+
+footer{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: baseline;
+    gap: 40px;
+    background-color: #470A03;
+    padding: 7px 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	align-items: baseline;
+    font-size: 14px;
+}
+
+.socmed-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.socmed{
+    font-size: 14px;
+}
+
+.social-media img{
+    height: 20px;
+    width: 20px;
+}
+
+.made-by{
+    text-align: right;
+    padding: 20px;
+    font-size: 14px; 
+}
+
+footer .detail{
+    font-size: 14px;
+}
+
+footer .detail a{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:768px) {
+    *{
+        font-size:15px;
+    }
+
+    .wrapper{
+        height: 1000px;
+    }
+
+    .content{
+        margin: 30px;  
+        height: 680px;  
+    }
+
+    .content-1{
+        width: 560px;
+    }
+
+    .content-see{
+        gap: 10px;
+    }
+
+    /* .thumb-img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+    } */
+
+    .thumb-img img{
+        display: none;
+    }
+
+    .menu{
+        width: 170px;
+        padding-inline: 7px;
+    }
+
+    .menu img{
+        height: 70px;
+        width: 130px;
+    }
+
+    .menu-details h5{
+        font-size: 14px;
+    }
+
+    .Harga{
+        font-size: 10px;
+        margin-bottom: 7px;
+    }
+
+    .details{
+        font-size: 9px;
+        margin-top: 10px;
+    }
+
+    footer{
+        gap: 5px;
+    }
+
+    .made-by{
+        font-size: 8px;
+        padding: 8px;
+    }
+
+    .socmed{
+        font-size: 14px;
+    }
+    
+    .social-media img{
+        height: 10px;
+        width: 10px;
+    }
+    
+    .contact{
+        font-size: 8px;
+    }
+
+    .socmed{
+        font-size: 8px;
+    }
+    
+    footer .detail{
+        font-size: 8px;
+    }
+    
+    footer .detail a{
+        font-size: 8px;
+    }
+
+    label{
+        margin-top: 5px;
+    }
+
+}
