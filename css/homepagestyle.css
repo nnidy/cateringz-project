@@ -117,6 +117,7 @@ button{
     margin-inline: 50px;
     font-size: 20px;
     border: 2px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button a {
@@ -173,6 +174,7 @@ button:hover button:not(:hover){
     background-color: #470A03;
     width: 400px;
     display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .voc{
@@ -218,6 +220,7 @@ button:hover button:not(:hover){
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    height: 277px;
 }
  
 .recommendation p{
@@ -245,9 +248,14 @@ button:hover button:not(:hover){
     border-style: solid;
 }
 
+.list{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .recommendation:hover .list:not(:hover){
     transform: scale(0.9);
     filter: grayscale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .list:hover .discount-price{
@@ -256,6 +264,7 @@ button:hover button:not(:hover){
     margin-inline: 100px;
     margin-top: 6px;
     padding-block: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -378,7 +387,9 @@ footer .detail a{
         margin-bottom: 150px;
     }
 
-
+    .recommendation{
+        height: 150px;
+    }
 
     #promo{
         margin-top: 40px;
